@@ -11,12 +11,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       OPEN_WEATHER_MAP_KEY: ${{ secrets.OPEN_WEATHER_MAP_KEY }}
       CITY_NAME: ${{ vars.CITY_NAME }}
       TIMEZONE: ${{ vars.TIMEZONE }}
       INSTAGRAM_ACCOUNT: ${{ vars.INSTAGRAM_ACCOUNT }}
       HTTP_PROXY: ${{ vars.HTTP_PROXY }}
+      LATITUDE: ${{ vars.LATITUDE }}
+      LONGITUDE: ${{ vars.LONGITUDE }}
 
     steps:
       - name: checkout
@@ -32,6 +36,12 @@ jobs:
           key: ${{ runner.os }}-js-${{ hashFiles('package-lock.json') }}
       - name: Install dependencies
         run: npm install
+      - name: Network check Open-Meteo (diagnostic)
+        run: |
+          set +e
+          echo "Testing Open-Meteo..."
+          curl -sS "https://api.open-meteo.com/v1/forecast?latitude=${LATITUDE:-34.757975}&longitude=${LONGITUDE:-113.665412}&current=temperature_2m,weather_code&daily=sunrise,sunset&timezone=${TIMEZONE:-Asia/Shanghai}" | head -c 400 || true
+          echo "\n(Network check done)"
       - name: Generate README file
         run: node index.js
       - name: Commit & push README.md
