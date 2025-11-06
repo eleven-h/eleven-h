@@ -21,7 +21,7 @@
 </p>
 <h3>Welcome to China!</h3>
 
-<p>此刻天气（<b>郑州</b>）：<b> 13°C，<i>clear</i></b><br/>今日日出：<b>14:50</b> ｜ 日落：<b>01:27</b></p>
+<p>此刻天气（<b>郑州</b>）：<b> 12°C，<i>clear</i></b><br/>今日日出：<b>14:51</b> ｜ 日落：<b>01:26</b></p>
 
 <h3>联系我</h3>
 <p>
@@ -29,4 +29,4 @@
 </p>
 
 ------------
-<p align="center">本 README 每 <b>3 小时</b> 自动更新。<br/>最近更新：Thursday 6 November at 23:19 GMT+8</p>
+<p align="center">本 README 每 <b>3 小时</b> 自动更新。<br/>最近更新：Friday 7 November at 02:25 GMT+8</p>
