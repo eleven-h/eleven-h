@@ -1,6 +1,6 @@
 <h1><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif" width="30"/> 嗨，我是 <b>eleven-h</b> 👋</h1>
 
-<p>欢迎来到我的主页！我是来自 <b>中国</b> 的 <b>前端</b> 开发者，热爱 <b>探索，创新，有强烈的好奇心，喜欢动漫，喜欢音乐但五音不全</b>。</p>
+<p>欢迎来到我的主页！我是来自 <b>中国·河南</b> 的 <b>前端</b> 开发者，热爱 <b>探索，创新，有强烈的好奇心，喜欢动漫，喜欢音乐但五音不全</b>。</p>
 
 <h3>我在用的技术</h3>
 <p>
@@ -29,4 +29,4 @@
 </p>
 
 ------------
-<p align="center">本 README 每 <b>3 小时</b> 自动更新。<br/>最近更新：Thursday 8 January at 17:26 GMT+8</p>
+<p align="center">本 README 每 <b>3 小时</b> 自动更新。<br/>最近更新：Thursday 8 January at 17:29 GMT+8</p>
